@@ -5,6 +5,7 @@ from pathlib import Path
 
 # Add the src directory to sys.path
 sys.path.append(os.path.join(os.getcwd(), "src"))
+print("sys.path:", sys.path)
 
 from src import (
     AirportDepartureTerminal,
