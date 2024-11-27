@@ -3,6 +3,8 @@ import sys
 import os
 from pathlib import Path
 
+print("Current Working Directory:", os.getcwd())
+
 # Add the project root to sys.path
 sys.path.append(str(Path(__file__).resolve().parent))
 sys.path.append(str(Path(__file__).resolve().parent / 'src'))
