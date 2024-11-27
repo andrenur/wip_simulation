@@ -3,14 +3,8 @@ import sys
 import os
 from pathlib import Path
 
-print("Current Working Directory:", os.getcwd())
-
-# Add the project root to sys.path
-sys.path.append(str(Path(__file__).resolve().parent))
-sys.path.append(str(Path(__file__).resolve().parent / 'src'))
-
-# Add the src directory to the Python path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'src')))
+# Add the src directory to sys.path
+sys.path.append(os.path.join(os.getcwd(), "src"))
 
 from src import (
     AirportDepartureTerminal,
