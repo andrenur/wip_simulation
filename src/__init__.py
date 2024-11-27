@@ -1,3 +1,9 @@
+import os
+
+print("Contents of CWD:", os.listdir())
+print("Contents of src:", os.listdir("src") if os.path.exists("src") else "src directory not found")
+
+
 # Import main classes from the simulation module
 from .simulation import (
     AirportDepartureTerminal,
